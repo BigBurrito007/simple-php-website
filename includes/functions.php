@@ -72,7 +72,7 @@ function page_content()
 
     echo file_get_contents($path);
     echo ' 
-    <img src="https://aws.revistavanityfair.es/prod/designs/v1/assets/785x589/47441.jpg" class="img" width="280" height="125" alt="Frineds Banner" />
+    <img src="https://i.blogs.es/2b1b39/friends/1366_521.jpeg" class="img" alt="Frineds Banner" />
     ';
 }
 
