@@ -51,7 +51,7 @@ function nav_menu($sep = '  ')
  */
 function page_title()
 {
-    $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'Habla con marcel!';
+    $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'Habla!';
 
     echo ucwords(str_replace('-', ' ', $page));
 }
@@ -63,7 +63,7 @@ function page_title()
  */
 function page_content()
 {
-    $page = isset($_GET['page']) ? $_GET['page'] : 'home';
+    $page = isset($_GET['page']) ? $_GET['page'] : 'HABLA CON MARCEL!';
     $path = getcwd() . '/' . config('content_path') . '/' . $page . '.phtml';
 
     if (! file_exists($path)) {
