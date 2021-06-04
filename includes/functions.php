@@ -36,7 +36,7 @@ function site_version()
  */
 function page_title()
 {
-    $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'HABLA CON MARCEL!';
+    $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'Habla con marcel!';
 
     echo ucwords(str_replace('-', ' ', $page));
 }
