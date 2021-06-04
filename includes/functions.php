@@ -27,7 +27,7 @@ function site_version()
 /**
  * Website navigation.
  */
-function nav_menu($sep = ' | ')
+function nav_menu($sep = '  ')
 {
     $nav_menu = '';
     $nav_items = config('nav_menu');
@@ -51,7 +51,7 @@ function nav_menu($sep = ' | ')
  */
 function page_title()
 {
-    $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'Home';
+    $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'Habla con marcel!';
 
     echo ucwords(str_replace('-', ' ', $page));
 }
