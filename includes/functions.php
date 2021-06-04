@@ -51,7 +51,7 @@ function nav_menu($sep = ' | ')
  */
 function page_title()
 {
-    $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'Habla con marcel!';
+    $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'HABLA CON MARCEL!';
 
     echo ucwords(str_replace('-', ' ', $page));
 }
