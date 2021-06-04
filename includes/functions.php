@@ -51,7 +51,7 @@ function nav_menu($sep = '  ')
  */
 function page_title()
 {
-    $page = isset($_GET['page']) ? $_GET['page'] : 'Chatea con Marcel para aprender mas de Friends!';
+    $page = isset($_GET['page']) ? $_GET['page'] : 'Chatea con Marcel para aprender más de Friends!';
 
     echo $page;
 }
