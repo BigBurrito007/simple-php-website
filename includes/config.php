@@ -7,13 +7,21 @@
  */
 function config($key = '')
 {
-    $config = [
+    
+$config = [
         'name' => 'Friends Chatbot',
         'site_url' => '',
         'pretty_uri' => false,
-        'template_path' => 'template',
-   
-    ];
+        'nav_menu' => [
+            '' => 'Home',
+            'about-us' => '',
+            'products' => '',
+            'contact' => '',
+        ],
+        'template_path' => '',
+        'content_path' => '',
+        'version' => '',
 
+    ];
     return isset($config[$key]) ? $config[$key] : null;
 }
