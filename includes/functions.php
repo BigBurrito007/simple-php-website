@@ -27,22 +27,7 @@ function site_version()
 /**
  * Website navigation.
  */
-function nav_menu($sep = ' | ')
-{
-    $nav_menu = '';
-    $nav_items = config('nav_menu');
-    
-    foreach ($nav_items as $uri => $name) {
-        $query_string = str_replace('page=', '', $_SERVER['QUERY_STRING'] ?? '');
-        $class = $query_string == $uri ? ' active' : '';
-        $url = config('site_url') . '/' . (config('pretty_uri') || $uri == '' ? '' : '?page=') . $uri;
-        
-        // Add nav item to list. See the dot in front of equal sign (.=)
-        $nav_menu .= '<a href="' . $url . '" title="' . $name . '" class="item ' . $class . '">' . $name . '</a>' . $sep;
-    }
 
-    echo trim($nav_menu, $sep);
-}
 
 /**
  * Displays page title. It takes the data from
@@ -51,27 +36,12 @@ function nav_menu($sep = ' | ')
  */
 function page_title()
 {
-    $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'HABLA !';
+    $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'HABLA CON MARCEL!';
 
     echo ucwords(str_replace('-', ' ', $page));
 }
 
-/**
- * Displays page content. It takes the data from
- * the static pages inside the pages/ directory.
- * When not found, display the 404 error page.
- */
-function page_content()
-{
-    $page = isset($_GET['page']) ? $_GET['page'] : 'Habla con marcel!';
-    $path = getcwd() . '/' . config('content_path') . '/' . $page . '.phtml';
 
-    if (! file_exists($path)) {
-        $path = getcwd() . '/' . config('content_path') . '/404.phtml';
-    }
-
-    echo file_get_contents($path);
-}
 
 /**
  * Starts everything and displays the template.
