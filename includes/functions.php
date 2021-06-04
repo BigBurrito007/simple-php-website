@@ -72,7 +72,7 @@ function page_content()
 
     echo file_get_contents($path);
     echo ' 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtpyAXBL9dKUZx_jAN0AXOjsjPxmGrHiZKg&usqp=CAU" width="280" height="125" alt="Frineds Banner" />
+    <img src="https://aws.revistavanityfair.es/prod/designs/v1/assets/785x589/47441.jpg" class="img" width="280" height="125" alt="Frineds Banner" />
     ';
 }
 
