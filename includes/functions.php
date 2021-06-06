@@ -74,6 +74,40 @@ function page_content()
     echo file_get_contents($path);
     echo ' 
     <img src="https://i.blogs.es/2b1b39/friends/1366_521.jpeg" class="img" alt="Frineds Banner" />
+    <style>
+  .chatElement {
+    height: 600px;
+    width: 100%;
+  } </style>
+<div class="chatElement"></div>
+<script>
+  const element = document.querySelector('.chatElement');
+  window.watsonAssistantChatOptions = {
+    integrationID: "7de74f70-6bf3-40bf-90a9-d2b6f73531b5", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "5f315828-90e0-4a72-a079-7510afe29988", 
+    
+    element: element,
+    
+    hideCloseButton: true,
+    
+    showLauncher: false,
+    
+    openChatByDefault: true,
+    onLoad: function(instance) {
+      instance.render();
+    }
+  };
+  setTimeout(function(){const t=document.createElement('script');t.src='https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js';document.head.appendChild(t);});
+    </script>
+
+
+
+
+
+    
+    
+    
     ';
 }
 
