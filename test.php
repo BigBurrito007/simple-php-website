@@ -3,13 +3,28 @@
 <head>
 <style>
   .chatElement {
-    height: 600px;
+    height: 100%;
     width: 100%;
   }
 </style>
 </head>
 <body>
-<div class="chatElement"></div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col align-self-start">
+      One of three columns
+    </div>
+    <div class="col align-self-center">
+    <div class="chatElement"></div>
+    </div>
+    <div class="col align-self-end">
+      One of three columns
+    </div>
+  </div>
+</div>
+
 <script>
   const element = document.querySelector('.chatElement');
   window.watsonAssistantChatOptions = {
