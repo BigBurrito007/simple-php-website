@@ -73,17 +73,13 @@ function page_content()
     echo file_get_contents($path);
     echo ' 
     <img src="https://i.blogs.es/2b1b39/friends/1366_521.jpeg" class="img" alt="Frineds Banner" />
-<!doctype html>
-<html lang="en">
-<head>
+    
 <style>
   .chatElement {
     height: 600px;
     width: 100%;
   }
 </style>
-</head>
-<body>
 <div class="chatElement"></div>
 <script>
   const element = document.querySelector('.chatElement');
@@ -91,28 +87,19 @@ function page_content()
     integrationID: "7de74f70-6bf3-40bf-90a9-d2b6f73531b5",
     region: "us-south",
     serviceInstanceID: "5f315828-90e0-4a72-a079-7510afe29988",
-
-    // Provide the custom element.
     element: element,
-    // Hide the close button since we want it always open.
     hideCloseButton: true,
-    // Hide the default launcher.
     showLauncher: false,
-    // Make the window open by default.
     openChatByDefault: true,
-
     onLoad: function(instance) {
       instance.render();
     }
   };
-
-  setTimeout(function(){const t=document.createElement('script');t.src='https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js';document.head.appendChild(t);});
-</script>
-</body>
-</html>
-    ';
-}
-
+  setTimeout(function(){const t=document.createElement('script');t.src='https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js';
+  document.head.appendChild(t);});
+  </script>
+';}
+'
 /**
  * Starts everything and displays the template.
  */
