@@ -9,22 +9,7 @@
 </style>
 </head>
 <body>
-
-
-<div class="container">
-  <div class="row">
-    <div class="col align-self-start">
-      One of three columns
-    </div>
-    <div class="col align-self-center">
     <div class="chatElement"></div>
-    </div>
-    <div class="col align-self-end">
-      One of three columns
-    </div>
-  </div>
-</div>
-
 <script>
   const element = document.querySelector('.chatElement');
   window.watsonAssistantChatOptions = {
