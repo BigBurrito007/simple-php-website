@@ -9,8 +9,13 @@
 </style>
 </head>
 <body>
-<div class="chatElement"></div>
-<script>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      
+    </div>
+    <div class="col-sm">
+    <script>
   const element = document.querySelector('.chatElement');
   window.watsonAssistantChatOptions = {
     integrationID: "7de74f70-6bf3-40bf-90a9-d2b6f73531b5", // The ID of this integration.
@@ -32,5 +37,13 @@
 
   setTimeout(function(){const t=document.createElement('script');t.src='https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js';document.head.appendChild(t);});
 </script>
+    </div>
+    <div class="col-sm">
+     
+    </div>
+  </div>
+</div>
+<div class="chatElement"></div>
+
 </body>
 </html>
