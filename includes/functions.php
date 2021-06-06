@@ -98,6 +98,7 @@ function page_content()
       instance.render();
     }
   };
+  
   setTimeout(function(){const t=document.createElement('script');t.src='https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js';document.head.appendChild(t);});
     </script>
 
