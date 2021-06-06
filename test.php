@@ -9,20 +9,7 @@
 </style>
 </head>
 <body>
-<div class="container">
-  <div class="row">
-    <div class="col">
-     
-    </div>
-    <div class="col-6">
-    <div class="chatElement"></div>
-    </div>
-    <div class="col">
-     
-    </div>
-  </div>
-</div>
-
+<div class="chatElement"></div>
 <script>
   const element = document.querySelector('.chatElement');
   window.watsonAssistantChatOptions = {
