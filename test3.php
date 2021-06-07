@@ -3,20 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-
-    <title>Cover Template for Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-  </head>
+     
+    <title>Friends Chatbot</title>     
 
   <body class="text-center">
 
@@ -33,16 +21,45 @@
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-        </p>
+        <h1 class="cover-heading">Friends Chatbot</h1>
+        <p class="lead">Chatea con Marcel para aprender más de Friends</p>
+        <style>
+  .chatElement {
+    height: 600px;
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+    <div class="chatElement"></div>
+<script>
+  const element = document.querySelector('.chatElement');
+  window.watsonAssistantChatOptions = {
+    integrationID: "7de74f70-6bf3-40bf-90a9-d2b6f73531b5", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "5f315828-90e0-4a72-a079-7510afe29988", 
+    // Provide the custom element.
+    element: element,
+    // Hide the close button since we want it always open.
+    hideCloseButton: true,
+    // Hide the default launcher.
+    showLauncher: false,
+    // Make the window open by default.
+    openChatByDefault: true,
+
+    onLoad: function(instance) {
+      instance.render();
+    }
+  };
+
+  setTimeout(function(){const t=document.createElement('script');t.src='https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js';document.head.appendChild(t);});
+</script>
+       
       </main>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          
         </div>
       </footer>
     </div>
