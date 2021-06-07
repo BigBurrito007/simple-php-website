@@ -7,14 +7,11 @@
     <title>Friends Chatbot</title>     
 
   <body class="text-center">
-
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Friends Chatbot</h1>
+         <h1 class="cover-heading">Friends Chatbot</h1>
         <p class="lead">Chatea con Marcel para aprender más de Friends</p>
         <style>
   .chatElement {
-    height: 600px;
+    height: 300px;
     width: 100%;
   }
 </style>
