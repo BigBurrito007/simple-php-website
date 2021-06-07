@@ -11,7 +11,7 @@
         <p class="lead">Chatea con Marcel para aprender más de Friends</p>
         <style>
   .chatElement {
-    height: 50%;
+    height: 350px;
     width: 100%;
   }
 </style>
